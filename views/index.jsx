@@ -4,6 +4,10 @@ const Default = require('./layouts/default')
 function Index ({breads, title}) {
     return (
         <Default>
+            <div className="newButton">
+                <a href="/breads/new"><button>Add a new bread</button></a>
+            </div>
+
   <h2>Index Page</h2>
   {/* <p>I have {breads[0].name} bread!</p> */}
   {/* This is a JSX comment. */}
@@ -21,8 +25,6 @@ function Index ({breads, title}) {
 }
   </ul>
 </Default>
-
-      
     )
 }
 
